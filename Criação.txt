@@ -1,0 +1,9 @@
+:: 1. Criar solução
+dotnet new sln -n API99
+
+:: 2. Criar projeto Web API com controllers (padrão tradicional)
+dotnet new webapi --use-controllers -n API99 --framework net8.0
+
+
+:: 3. Adicionar projeto à solução
+dotnet sln API99.sln add API99/API99.csproj
